@@ -13,6 +13,7 @@ sns.set(style="whitegrid")
 # 1. Summary statistics of numeric values
 print(diamonds_df.describe())
 
+# 2. Mean of the data
 avg_price_by_cut = diamonds_df.groupby('cut')['price'].mean()
 print("\nAverage Price by Cut:")
 print(avg_price_by_cut)
